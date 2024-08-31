@@ -1,0 +1,81 @@
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .table{
+        width: 500px;
+        border: solid 2px;
+        border-color: white;
+    }
+    .input{
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+    }
+    .task{
+        margin-left: 5px;
+    }
+    .add{
+        cursor: pointer;
+    }
+    .in{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   #todo{
+        margin-left: 10px;
+    }
+    .del{
+        margin-left: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    label {
+        padding: 10px 20px;
+        position: absolute;
+        top : 20px ;
+        right : 20px;
+        height: 8px;
+        width:25px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    
+    label:before{
+      position: absolute;
+      content: "";
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      top:2px;
+      left:2px;
+      cursor: pointer;
+      background-color: #000000;
+      transition: 0.4s;
+    }
+
+    label.active:before{
+        left: 38px;
+        background-color: #ffffff;
+    }
+    body.dark-mode{
+        background-color: #000000;
+        color :#ffffff;
+    }
